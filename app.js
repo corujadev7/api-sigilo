@@ -1,9 +1,10 @@
-const express = require('express');
-const cors = require('cors');
-const axios = require('axios')
-const uuid = require('uuid');
-require('dotenv').config();
+import express from 'express';
+import cors from 'cors';
+import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express()
 
 const corsOptions = {
@@ -334,7 +335,7 @@ app.post('/create/payment', async (req, res) => {
 
 
         const pixData = {
-            "identifier": uuid.v4(),
+            "identifier": uuidv4(),
             "amount": newAmount,
             "client": {
                 "name": randomName,
