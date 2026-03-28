@@ -132,7 +132,7 @@ const searchCpfs = () => {
 
 
 app.get('/api/healthy', (req, res) => {
-    return res.status(200).json({ message: "✅🏴‍☠️🏴‍☠️ API IS UP AND WORKING.." })
+    return res.status(200).json({ message: "✅🏴‍☠️🏴‍☠️ API IS UP AND WORKING FINE.." })
 })
 
 const PORT = process.env.PORT || 5004;
